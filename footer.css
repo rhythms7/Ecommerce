@@ -1,82 +1,143 @@
-#footer {
-	border-top: 1px solid #a4dd50;
-	padding-top: 20px;
+@import url( 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#footer div {
-	margin: 0 auto;
-	overflow: hidden;
-	width: 960px;
+.container {
+    max-width: 1170px;
+    margin: auto;
 }
-#footer div div {
-	float: left;
-	margin-left: 65px;
-	width: 175px;
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
-#footer div div span {
-	color: #364818;
-	display: block;
-	font-size: 18px;
-	padding-bottom: 20px;
+ul {
+    list-style: none;
 }
-#footer div div a {
-	color: #314810;
-	display: block;
-	margin-bottom: 15px;
-	text-decoration: none;
-	text-indent: 70px;
+.footer {
+    background-color: #24262b;
+    padding: 70px;
+    padding-bottom: 10px;
 }
-#footer div div a:hover {
-	color: #82ae3f;
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    text-align: center;
 }
-#footer div div a.facebook {
-	background: url(../images/icon.gif) no-repeat 10px 0;
-	line-height: 41px;
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
 }
-#footer div div a.subscribe {
-	background: url(../images/icon.gif) no-repeat 10px -85px;
-	line-height: 27px;
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    background-color: rgb(255, 80, 57);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    transform: translateX(-50%);
 }
-#footer div div a.twitter {
-	background: url(../images/icon.gif) no-repeat 10px -123px;
-	line-height: 30px;
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
 }
-#footer div div a.instagram {
-	background: url(../images/icon.gif) no-repeat 10px -50px;
-	line-height: 24px;
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
 }
-#footer div ul {
-	float: right;
-	list-style: none;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	width: 640px;
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
 }
-#footer div ul li {
-	background: url(../images/bg-footer-item.jpg) no-repeat;
-	float: left;
-	height: 251px;
-	width: 320px;
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
-#footer div ul li p {
-	color: #000;
-	line-height: 23px;
-	margin: 0;
-	padding: 0 35px;
-	text-align: justify;
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
 }
-#footer div ul li a.readmore {
-	color: #fefb00;
-	display: block;
-	padding: 5px 35px 0;
-	text-align: right;
+
+.footer-col h6 {
+	color: #fff;
+	font-weight: 500;
 }
-#footer p.footnote {
-	color: #2a460c;
-	padding: 5px 0;
-	text-align: center;
+
+.footer-col img {
+	width: 80%;
 }
-#footer p.footnote a {
-	color: #314810;
-	text-decoration:none;
+
+.footer-col ul li i {
+	color: #fff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+.ft_logo img {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ft_line hr {
+    width: 80%;
+    margin: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 80, 57);
+    border: none;
+    height: 2px;
+    box-shadow: 0 0 10px rgb(255, 80, 57);
+}
+
+.copyright {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footer-col h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-col ul li a {
+    font-family: 'Poppins', sans-serif;
+}
+
+.copyright {
+    font-family: 'Poppins', sans-serif;
 }
